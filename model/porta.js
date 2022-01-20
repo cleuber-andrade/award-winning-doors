@@ -41,5 +41,4 @@ export default class Porta {
     const aberta = true;
     return new Porta(this.numero, this.temPresente, this.selecionada, aberta)
   }
-
 }
