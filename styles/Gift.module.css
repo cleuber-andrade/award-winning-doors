@@ -19,12 +19,13 @@
 .laco1{
   position: absolute;
   width: 15px;
-  height: 85;
+  height: 110px;
   background-color: red;  
 }
 
 .laco2{
   position: absolute;
+  top: 50px;
   width: 90px;
   height: 15px;
   background-color: red;
