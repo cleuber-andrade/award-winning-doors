@@ -4,7 +4,7 @@ export default class Porta {
   #selecionada: boolean
   #aberta: boolean
 
-  constructor(numero, temPresente = false, selecionada = false, aberta = false ){
+  constructor(numero: number, temPresente = false, selecionada = false, aberta = false ){
     this.#numero = numero,
     this.#temPresente = temPresente,
     this.#selecionada = selecionada,
