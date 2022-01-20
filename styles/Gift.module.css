@@ -24,5 +24,8 @@
 }
 
 .laco2{
+  position: absolute;
+  width: 90px;
+  height: 15px;
   background-color: red;
 }
