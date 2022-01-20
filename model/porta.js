@@ -27,5 +27,8 @@ export default class Porta {
     return this.#aberta
   }
 
+  alternarSelecao() {
+    const selecionada = !this.selecionada;
+  }
 
 }
