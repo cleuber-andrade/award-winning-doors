@@ -5,11 +5,15 @@
   background-color: chocolate;
   padding: 15px;
 
-  /*provisório*/
-  width: 200px;
-  height: 310px;
+  /*provisoria*/
+  width: var(--area-porta-largura);
+  height: var(--area-porta-altura);
 }
 
 .numero{
   font-size: 3rem;
+}
+
+.frame{
+  
 }
