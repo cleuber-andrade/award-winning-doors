@@ -1,19 +1,22 @@
-.porta{
+.area{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: chocolate;
-  padding: 15px;
-
-  /*provisoria*/
   width: var(--area-porta-largura);
   height: var(--area-porta-altura);
 }
 
-.numero{
-  font-size: 3rem;
+.estrutura{
+  display: flex;
+  flex-grow: 1;
 }
 
-.frame{
-  
+.porta{
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  background-color: chocolate;
+  padding: 15px;  
+}
+
+.numero{
+  font-size: 3rem;
 }
