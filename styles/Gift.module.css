@@ -1,4 +1,5 @@
 .presente{
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;  
@@ -6,7 +7,7 @@
 
 .tampa{
   width: 100px;
-  height: 50px;
+  height: 25px;
   background-color: #7aa944;
 }  
 
@@ -19,13 +20,13 @@
 .laco1{
   position: absolute;
   width: 15px;
-  height: 110px;
+  height: 85px;
   background-color: red;  
 }
 
 .laco2{
   position: absolute;
-  top: 50px;
+  top: 40px;
   width: 90px;
   height: 15px;
   background-color: red;
