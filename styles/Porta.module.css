@@ -7,6 +7,9 @@
 .estrutura{
   display: flex;
   flex-grow: 1;
+  border-left: 5px solid brown;
+  border-top: 5px solid brown;
+  border-right: 5px solid brown;
 }
 
 .porta{
