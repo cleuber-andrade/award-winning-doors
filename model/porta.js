@@ -28,7 +28,7 @@ export default class Porta {
   }
 
   desselecionar(){
-    const selecionada = !this.selecionada;
+    const selecionada = false;
     return new Porta(this.numero, this.temPresente, selecionada, this.aberta)
   }
 
