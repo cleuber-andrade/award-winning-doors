@@ -7,9 +7,10 @@ export default function Home() {
   const [texto, setTexto] = useState("...");
 
   return (
-    <div style={{display: "flex", flexDirection: "column"}}>
+    <div style={{display: "flex"}}>
       <input type="text" value={texto} onChange={e => setTexto(e.target.value)} />
-      <Porta value={p1} />      
+      <Porta value={p1} /> 
+      <Porta value={p1} /> 
     </div>
   )
 }
