@@ -10,6 +10,3 @@ export default function Gift(){
     </div>
   )
 }
-
-tetstsk
-1321321
