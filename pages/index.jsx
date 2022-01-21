@@ -9,8 +9,7 @@ export default function Home() {
   return (
     <div style={{display: "flex"}}>
       <input type="text" value={texto} onChange={e => setTexto(e.target.value)} />
-      <Porta value={p1} /> 
-      <Porta value={p1} /> 
+      <Porta value={p1}/>       
     </div>
   )
 }
