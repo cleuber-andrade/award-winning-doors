@@ -1,7 +1,7 @@
-import styles from "../styles/Jogo.module.css";
-import Porta from "../components/Porta";
+import styles from "../../styles/Jogo.module.css";
+import Porta from "../../components/Porta";
 import { useState } from "react";
-import { criarPortas, atulizarPortas } from "../function/portas"
+import { criarPortas, atulizarPortas } from "../../function/portas"
 import Link from "next/link";
 
 
