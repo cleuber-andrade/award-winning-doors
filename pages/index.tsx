@@ -23,7 +23,7 @@ export default function Formulario() {
           <EntradaNumerica text="Porta com Presente?" value={comPresente} onChange={novaPortaComPresente => setcomPresente(novaPortaComPresente)}/>
         </Cartao>
         <Cartao bgcolor="#28a085">
-          <Link href={`/jogo/4/2`} passHref>
+          <Link href={`/jogo/${qdtsPortas}/${comPresente}`} passHref>
             <h2 className={styles.link}>Iniciar</h2>
           </Link>          
         </Cartao>
