@@ -12,6 +12,6 @@ export const atulizarPortas = (portas: PortaModel[], portaModificada: PortaModel
   return portas.map(portaAtual => {
     const igualAModificada = portaAtual.numero === portaModificada.numero;
 
-    return igualAModificada ? portaModificada : portaAtual;      
+    return igualAModificada ? portaModificada : portaAtual.desselecionar();      
   })
 }
