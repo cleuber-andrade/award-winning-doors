@@ -4,7 +4,7 @@ import { atulizarPortas, criarPortas } from "../function/portas";
 import PortaModel from "../model/porta";
 
 export default function Home() {   
-  const [ portas, setPortas ] = useState(criarPortas(3, 2))
+  const [ portas, setPortas ] = useState(criarPortas(5, 2));
 
   const renderizarPortas = () => {
     return portas.map(porta =>{
