@@ -2,6 +2,7 @@ import styles from "../styles/Jogo.module.css";
 import Porta from "../components/Porta";
 import { useState } from "react";
 import { criarPortas, atulizarPortas } from "../function/portas"
+import Link from "next/link";
 
 
 export default function Jogo(){
@@ -17,7 +18,12 @@ export default function Jogo(){
     <div id={styles.jogo}>
       <div className={styles.portas}>
         {renderizarPortas()}  
-      </div>               
+      </div> 
+      <div className={styles.botoes}>
+        <Link href="/" passHref>
+          <button>Reiniciar</button>
+        </Link>
+      </div>             
     </div>    
   )
 }
