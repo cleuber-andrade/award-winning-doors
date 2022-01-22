@@ -1,8 +1,9 @@
+import Cartao from "../components/Cartao";
 
-export default function Home() {   
+export default function Formulario() {   
     return (
-    <div style={{display: "flex"}}>
-      <h1>Inicio do Jogo</h1>       
+    <div >
+      <Cartao />   
     </div>
   )
 }
