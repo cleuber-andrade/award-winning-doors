@@ -21,7 +21,7 @@ export default function Jogo(){
       </div> 
       <div className={styles.botoes}>
         <Link href="/" passHref>
-          <button>Reiniciar</button>
+          <button>Reiniciar Jogo</button>
         </Link>
       </div>             
     </div>    
