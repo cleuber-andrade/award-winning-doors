@@ -12,7 +12,7 @@ export default function Jogo(){
 
   useEffect(() =>{
     const portas = +router.query.portas;
-    const temPresente = router.query.temPresente;
+    const temPresente = +router.query.temPresente;
     setPortas(criarPortas(portas, temPresente));
   }, [router?.query])
 
