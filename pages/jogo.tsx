@@ -1,6 +1,7 @@
+import styles from "../styles/Jogo.module.css";
 import Porta from "../components/Porta";
 import { useState } from "react";
-import { criarPortas, atulizarPortas } from "../function/portas";
+import { criarPortas, atulizarPortas } from "../function/portas"
 
 
 export default function Jogo(){
@@ -13,8 +14,10 @@ export default function Jogo(){
   }
   
   return (
-    <div style={{display: "flex"}}>
-      {renderizarPortas()}           
-    </div>
+    <div id={styles.jogo}>
+      <div className={styles.portas}>
+        {renderizarPortas()}  
+      </div>               
+    </div>    
   )
 }
