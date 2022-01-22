@@ -7,3 +7,15 @@ export const criarPortas = (qtde: number, selecionada: number): PortaModel[] => 
     return new PortaModel(numero, temPresente);
   })
 } 
+
+export const atulizarPortas = (portas: PortaModel[], portaModificada: PortaModel): PortaModel[] => {
+  return portas.map(portaAtual => {
+    const igualAModificada = portaAtual.numero === portaModificada.numero;
+
+    if(igualAModificada){
+      return portaModificada;
+    }else{
+      return portaAtual;
+    }
+  })
+}
