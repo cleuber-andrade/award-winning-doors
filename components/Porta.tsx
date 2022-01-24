@@ -30,7 +30,7 @@ export default function Porta(props: PortaProps) {
     return (
         <div className={styles.area} onClick={alternarSelecao}>
             <div className={`${styles.estrutura} ${selecionada}`}>
-                {porta.fechada ?
+                {!porta.aberta ?
                     renderizarPorta() : 
                     porta.temPresente ? <Gift /> : false
                 }
