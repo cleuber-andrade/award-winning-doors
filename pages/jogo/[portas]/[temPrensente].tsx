@@ -41,7 +41,7 @@ export default function Jogo(){
   return (
     <div id={styles.jogo}>
       <div className={styles.portas}>
-        {valido ? renderizarPortas() : <h1>Valores Inválidos</h1>}  
+        {valido ? <h1>valores inválidos</h1> : renderizarPortas()}  
       </div> 
       <div className={styles.botoes}>
         <Link href="/" passHref>
