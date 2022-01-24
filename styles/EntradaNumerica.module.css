@@ -1,4 +1,4 @@
-.entradaNumerica{
+.entradaNumerica {
   display: flex;
   flex: 1;
   flex-direction: column;
@@ -7,20 +7,20 @@
   color: #000;
 }
 
-.text{
+.text {
   color: #555;
   font-size: 1.5rem;
 }
 
-.value{
+.value {
   font-size: 6rem;
 }
 
-.button{
+.botoes {
   display: flex;
 }
 
-.btn{
+.btn {
   display: flex;
   justify-content: center;
   align-items: center;
