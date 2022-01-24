@@ -1,7 +1,7 @@
 import styles from "../../../styles/Jogo.module.css";
 import Porta from "../../../components/Porta";
 import { useEffect, useState } from "react";
-import { criarPortas, atulizarPortas } from "../../../function/portas"
+import { criarPortas, atualizarPortas } from "../../../function/portas"
 import Link from "next/link";
 import { useRouter } from "next/router";
 
@@ -17,10 +17,9 @@ export default function Jogo(){
     const temPresente = +router.query.temPresente;
 
     const qtdePortasValida = portas >= 3 && portas <= 100;
-
     const temPresenteValido = temPresente >= 1 && temPresente <=portas;
 
-    setValido(qtdePortasValida && temPresenteValido)
+    setValido(qtdePortasValida && temPresenteValido);
 
   }, [portas, router.query.portas, router.query.temPresente]);
 
@@ -35,7 +34,7 @@ export default function Jogo(){
 
   const renderizarPortas = () => {
     return portas.map(porta =>{
-      return <Porta key={porta.numero} value={porta} onChange={novaPorta => setPortas(atulizarPortas(portas, novaPorta))}/>
+      return <Porta key={porta.numero} value={porta} onChange={novaPorta => setPortas(atualizarPortas(portas, novaPorta))}/>
     })
   }
   

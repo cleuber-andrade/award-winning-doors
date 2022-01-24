@@ -8,7 +8,7 @@ export const criarPortas = (qtde: number, comPresente: number): PortaModel[] => 
   })
 } 
 
-export const atulizarPortas = (portas: PortaModel[], portaModificada: PortaModel): PortaModel[] => {
+export const atualizarPortas = (portas: PortaModel[], portaModificada: PortaModel): PortaModel[] => {
   return portas.map(portaAtual => {
     const igualAModificada = portaAtual.numero === portaModificada.numero;
 
