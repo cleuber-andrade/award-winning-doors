@@ -7,14 +7,14 @@ interface PortaProps {
     onChange: (novaPorta: PortaModel) => void
 }
 
-export default function Porta({value, onChange}: PortaProps) {
-    const porta = value
+export default function Porta(props: PortaProps) {
+    const porta = props.value
     const selecionada = porta.selecionada && !porta.aberta ? styles.selecionada : ''
 
-    const alternarSelecao = () => onChange(porta.alternarSelecao())
+    const alternarSelecao = e => props.onChange(porta.alternarSelecao())
     const abrir = e => {
         e.stopPropagation()
-        onChange(porta.abrir())
+        props.onChange(porta.abrir())
     }
 
     function renderizarPorta() {
@@ -30,7 +30,7 @@ export default function Porta({value, onChange}: PortaProps) {
     return (
         <div className={styles.area} onClick={alternarSelecao}>
             <div className={`${styles.estrutura} ${selecionada}`}>
-                {porta.aberta ?
+                {porta.fechada ?
                     renderizarPorta() : 
                     porta.temPresente ? <Gift /> : false
                 }

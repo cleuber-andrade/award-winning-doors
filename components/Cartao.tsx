@@ -5,13 +5,13 @@ interface CartaoProps {
     children?: any
 }
 
-export default function Cartao({bgcolor , children}: CartaoProps) {
+export default function Cartao(props: CartaoProps) {
     return (
         <div className={styles.cartao}
             style={{
-                backgroundColor: bgcolor ?? "#fff"
+                backgroundColor: props.bgcolor ?? "#fff"
             }}>
-            {children}
+            {props.children}
         </div>
     )
 }
