@@ -25,9 +25,9 @@ export default class PortaModel {
 
     get aberta() {
         return this.#aberta
-    }
+    }    
 
-    get fechada() {
+    get fechada(){
         return !this.aberta
     }
 

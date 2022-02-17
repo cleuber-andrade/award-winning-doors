@@ -37,15 +37,15 @@ export default function Jogo() {
         <div id={styles.jogo}>
             <div className={styles.portas}>
                 {valido ? 
-                    <h1>Valores inválidos</h1> :
-                    renderizarPortas()                    
+                    renderizarPortas() :
+                    <h1>Valores inválidos</h1>             
                 }
             </div>
             <div className={styles.botoes}>
                 <Link href="/" passHref>
                     <button style={{cursor: "pointer"}}>Reiniciar Jogo</button>
                 </Link>
-            </div>
+            </div>            
         </div>
     )
 }

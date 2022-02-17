@@ -1,6 +1,6 @@
 import styles from "../styles/Gift.module.css"
 
-export default function Gift() {
+export default function Presente() {
     return (
         <div className={styles.presente}>
             <div className={styles.tampa}></div>
