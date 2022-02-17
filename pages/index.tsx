@@ -17,14 +17,16 @@ export default function Formulario() {
         <Cartao>
           <EntradaNumerica text="Qtde Portas?"
             value={qtdePortas}
-            onChange={novaQtde => setQtdePortas(novaQtde)} />
+            onChange={novaQtde => setQtdePortas(novaQtde)}
+          />
         </Cartao>
       </div>
       <div>
         <Cartao>
           <EntradaNumerica text="Porta com Presente?"
             value={comPresente}
-            onChange={novaPortaComPresente => setComPresente(novaPortaComPresente)} />
+            onChange={novaPortaComPresente => setComPresente(novaPortaComPresente)} 
+          />
         </Cartao>
         <Cartao bgcolor="#28a085">
           <Link href={`/jogo/${qtdePortas}/${comPresente}`} passHref>
